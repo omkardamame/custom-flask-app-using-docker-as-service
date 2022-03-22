@@ -60,7 +60,7 @@ systemctl status <service_name>.service
 systemctl enable <service_name>.service
 ```
 ```
-docker service create --mode global --name <service_name> <repo_name>:<tagname>
+docker service create --mode global --name <service_name> -v <volume_name>:<path_to_container> <repo_name>:<tagname>
 ```
 
 Restart the instance and check if it is working properly.
