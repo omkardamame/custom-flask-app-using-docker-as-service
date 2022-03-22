@@ -12,5 +12,5 @@ docker pull omkardamame/custom-flask-app-as-service:1.0.0
 
 For Quay.io
 ```
-quay.io/omkardamame/custom-flask-app-as-service:1.0.0
+docker pull quay.io/omkardamame/custom-flask-app-as-service:1.0.0
 ```
