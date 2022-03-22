@@ -1,0 +1,3 @@
+docker build --compress -t custom-flask-app-using-docker-as-service:1.0.0 .
+
+docker run -dit --restart unless-stopped --name custom-flask-app-using-docker-as-service -v myvol1:/flask-example custom-flask-app-using-docker-as-service:1.0.0
