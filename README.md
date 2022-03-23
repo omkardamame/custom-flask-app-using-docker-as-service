@@ -3,7 +3,7 @@
 I have deployed beautiful minimal web-app created by [XD-DENG](https://github.com/XD-DENG) which is [flask-example](https://github.com/XD-DENG/flask-example).
 Task was to conternarized the web-app and attact a volume and make sure it is resilient to reboots (means it should be running at startup).
 
-![custom-flask-app-using-docker-as-service](https://github.com/omkardamame/custom-flask-app-using-docker-as-service/raw/master/custom-flask-app-using-docker-as-service.pnghttps://github.com/omkardamame/custom-flask-app-using-docker-as-service/raw/master/custom-flask-app-using-docker-as-service.png)
+![custom-flask-app-using-docker-as-service](https://github.com/omkardamame/custom-flask-app-using-docker-as-service/raw/master/custom-flask-app-using-docker-as-service.png)
 
 You can pull the image from below command:
 
