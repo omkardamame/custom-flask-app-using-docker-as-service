@@ -30,7 +30,7 @@ docker swarm init
 
 After this just run the container normally you would.
 
-===== Creating Docker service =====
+===== Creating Podman service =====
 
 ```
 sudo vim /etc/systemd/system/<service_name>.service
@@ -48,6 +48,16 @@ ExecStop=/usr/bin/podman stop -t 2 <container_name>
 [Install]
 WantedBy=multi-user.target
 ```
+
+OR
+
+This will automatically generate podman container service:
+```
+podman generate systemd --name <image_name> --files
+```
+
+You need to move that service file which got generated to /etc/systemd/system/ path.
+
 Save it and go for next.
 
 ```
@@ -59,6 +69,9 @@ systemctl status <service_name>.service
 ```
 systemctl enable <service_name>.service
 ```
+
+===== Creating Docker service =====
+
 ```
 docker service create --mode global --name <service_name> <repo_name>:<tagname>
 ```
